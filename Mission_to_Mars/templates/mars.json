@@ -1,0 +1,24 @@
+{
+   "nasa_mars_title":"Celebrate Mars Reconnaissance Orbiter's Views From Above",
+   "nasa_mars_paragraph":"Marking its 15th anniversary since launch, one of the oldest spacecraft at the Red Planet has provided glimpses of dust devils, avalanches, and more.",
+   "jpl_image":"https://photojournal.jpl.nasa.gov/jpeg/PIA16565.jpg",
+   "mars_latest_tweet":"Something went wrong, but don’t fret — let’s give it another shot.",
+   "mars_facts":"<table border=\"1\" class=\"dataframe\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Value</th>\n    </tr>\n    <tr>\n      <th>Description</th>\n      <th></th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>Equatorial Diameter</th>\n      <td>6,792 km</td>\n    </tr>\n    <tr>\n      <th>Polar Diameter</th>\n      <td>6,752 km</td>\n    </tr>\n    <tr>\n      <th>Mass</th>\n      <td>6.39 × 10^23 kg (0.11 Earths)</td>\n    </tr>\n    <tr>\n      <th>Moons</th>\n      <td>2 (Phobos &amp; Deimos)</td>\n    </tr>\n    <tr>\n      <th>Orbit Distance</th>\n      <td>227,943,824 km (1.38 AU)</td>\n    </tr>\n    <tr>\n      <th>Orbit Period</th>\n      <td>687 days (1.9 years)</td>\n    </tr>\n    <tr>\n      <th>Surface Temperature</th>\n      <td>-87 to -5 °C</td>\n    </tr>\n    <tr>\n      <th>First Record</th>\n      <td>2nd millennium BC</td>\n    </tr>\n    <tr>\n      <th>Recorded By</th>\n      <td>Egyptian astronomers</td>\n    </tr>\n  </tbody>\n</table>",
+   "mars_hemisphere":[
+      {
+         "title":"Cerberus Hemisphere",
+         "img_url":"https://astropedia.astrogeology.usgs.gov/download/Mars/Viking/cerberus_enhanced.tif/full.jpg"
+      },
+      {
+         "title":"Schiaparelli Hemisphere",
+         "img_url":"https://astropedia.astrogeology.usgs.gov/download/Mars/Viking/schiaparelli_enhanced.tif/full.jpg"
+      },
+      {
+         "title":"Syrtis Major Hemisphere",
+         "img_url":"https://astropedia.astrogeology.usgs.gov/download/Mars/Viking/syrtis_major_enhanced.tif/full.jpg"
+      },
+      {
+         "title":"Valles Marineris Hemisphere",
+         "img_url":"https://astropedia.astrogeology.usgs.gov/download/Mars/Viking/valles_marineris_enhanced.tif/full.jpg"
+      }
+   ]

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mission to Mars</title>
+  <!-- Bootstrap CSS -->
+  <link rel = "stylesheet" href = "https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity = "sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin = "anonymous">
+</head>
+<body class = "text-white" style = "background-color: grey;">
+  <div class = "container">
+    <!-- Mission to Mars -->
+    <div class = "jumbotron text-center" style = "background-image: url(https://upload.wikimedia.org/wikipedia/commons/1/1a/Elon_Musk%27s_Tesla_Roadster_%2840110297852%29.jpg); background-size: 100%; height: 100%;">
+      <h1 style = "font-family: Arial, Helvetica, sans-serif; color: white; font-size: 60px;" class = "display-4;">Mission to Mars</h1>
+      <a class = "btn btn-lg text-white" style = "background-color: grey;" href = "href = "/scrape" role = "button">Update</a>
+    </div>
+    <!--- Title & Paragraph -->
+    <div class = "container">
+      <h2 style = "color: white; font-family: Arial, Helvetica, sans-serif">Latest Mars News</h2>
+      <h4 style = "color: white">{{data.nasa_mars_title}}</h4>
+      <p>{{data.nasa_mars_paragraph}}</p>
+    </div>
+    <!--- Featured Image -->
+    <div class = "container">
+      <div class = "row">
+        <div class = "col-lg-8 col-md-8 col-sm-6 col-xm-12">
+          <h3 style = "color: white; font-family: Arial, Helvetica, sans-serif; text-align: center;">Featured Mars Image</h3>
+          <img src = "{{data.jpl_image}}" style = "max-width: 100%;" alt= "mars image">
+        </div>
+        <div class = "col-lg-4 col-md-4 col-sm-6 col-xm-12">
+          <div class = "card text-center bg-dark mb-3" style= "max-width: 18rem;">
+            <div class = "card-header">Current Weather on Mars</div>
+            <h5 class = "card-title"></h5>
+            <p class = "card-text">{{data.mars_latest_tweet}}</p>
+          </div>
+          <!-- Mar Facts -->
+          <div>
+            <h3 style = "color: white; font-family: Arial, Helvetica, sans-serif">Mars Facts</h3>
+            <table>{{ data.mars_facts | safe}}</table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <h1 style = "padding-top: 30px; padding-bottom: 30px; text-align: center; color: white; font-family: Arial, Helvetica, sans-serif;">Mars Hemispheres</h1>
+  </div>
+  <!-- Hemispheres -->
+  <div class = "container-fluid">
+    <div class = "row">
+      <div class = "col-md-6">
+        <div class = "row">
+          <div class = "col-md-12">
+            <!-- "Cerberus" -->
+            <img src = {{data.mars_hemisphere[0]["img_url"]}} style = "max-width: 100%; height: auto;"/>
+            <h2>{{data.mars_hemisphere[0]["title"]}}</h2>
+          </div>
+          <div class = "col-md-12">
+            <!-- "Syrtis" -->
+            <img src = {{data.mars_hemisphere[1]["img_url"]}} style = "max-width: 100%; height: auto;"/>
+            <h2>{{data.mars_hemisphere[1]["title"]}}</h2>
+          </div>
+        </div>
+      </div>
+      <div class = "col-md-6">
+        <div class = "row">
+          <div class = "col-md-12">
+            <!-- "Schiaparelli" -->
+            <img src = {{data.mars_hemisphere[2]["img_url"]}} style = "max-width: 100%; height: auto;"/>
+            <h2>{{data.mars_hemisphere[2]["title"]}}</h2>
+          </div>
+          <div class = "col-md-12">
+            <!-- "Valles" -->
+            <img src = {{data.mars_hemisphere[3]["img_url"]}} style = "max-width: 100%; height:auto;"/>
+            <h2>{{data.mars_hemisphere[3]["title"]}}</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
